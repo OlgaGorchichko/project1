@@ -30,7 +30,7 @@ const personalMovieDB = {
     movies: {},
     actors: {},
     genres: [],
-    privat: false
+    private: false
 };
 
 const lastMovie1 = prompt('Один из последних просмотренных фильмов?', ''),
