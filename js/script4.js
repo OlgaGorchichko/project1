@@ -104,11 +104,7 @@ const personalMovieDB = {
         переключает его в true, если true - переключает в false. Протестировать вместе с showMyDB.
     */
     toggleVisibleMyDB: function() {
-        if (personalMovieDB.private) {
-            personalMovieDB.private = false;
-        } else {
-            personalMovieDB.private = true;
-        }
+        personalMovieDB.private == !personalMovieDB.private;
     }
 };
 
