@@ -26,7 +26,7 @@ const personalMovieDB = {
 
 let a, b, state = false;
 
-for (let i = 0; i<2; i++) {
+for (let i = 0; i < 2; i++) {
     while (!state) {
         a = prompt('Один из последних просмотренных фильмов?', '');
         if (a != null && a != '' && a.length < 50) {
@@ -47,5 +47,5 @@ if (personalMovieDB.count < 10) {
 } else if (personalMovieDB.count > 30) {
     console.log("Вы киноман"); 
 } else {
-    console.log("Произошла ошибка");  
+    console.log("Произошла ошибка");
 }

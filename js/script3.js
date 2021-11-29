@@ -58,7 +58,7 @@ function detectPersonalLevel(){
     } else if (personalMovieDB.count > 30) {
         console.log("Вы киноман"); 
     } else {
-        console.log("Произошла ошибка");  
+        console.log("Произошла ошибка");
     }
 }
 
@@ -67,22 +67,22 @@ function detectPersonalLevel(){
 // 2) Создать функцию showMyDB, которая будет проверять свойство privat. Если стоит в позиции
 // false - выводит в консоль главный объект программы
 
-function showMyDB() {
-    if (personalMovieDB.private == false) {
+function showMyDB(hidden) {
+    if (!hidden) {
         console.log(personalMovieDB);
     } else {
         console.log('Защищенные данные');
     }
 }
 
-//showMyDB();
+//showMyDB(personalMovieDB.private);
 
 // 3) Создать функцию writeYourGenres в которой пользователь будет 3 раза отвечать на вопрос 
 // "Ваш любимый жанр под номером ${номер по порядку}". Каждый ответ записывается в массив данных
 // genres
 
 function writeYourGenres() {
-    for (let i = 0; i<3; i++) {
+    for (let i = 0; i < 3; i++) {
         personalMovieDB.genres[i] = prompt(`Ваш любимый жанр под номером ${i+1}`, '');
     }
 
