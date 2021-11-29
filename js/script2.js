@@ -47,5 +47,5 @@ if (personalMovieDB.count < 10) {
 } else if (personalMovieDB.count > 30) {
     console.log("Вы киноман"); 
 } else {
-    console.log("Произошла ошибка"); 
+    console.log("Произошла ошибка");  
 }
